@@ -1,5 +1,5 @@
 ## My Little Phony
-	- Simple Phonebook Webpage where a user can add a new item in the  list of currently registered names in the phonebook
+	- Simple Phonebook Webpage where a user can add a new item    in the list of currently registered names in the phonebook
 	- Combination of HTML, CSS, and Javascript
 
 ### Features:
@@ -32,5 +32,4 @@
    * Character limits can be added on the input and output
    * Codes for HTML, CSS, and JS can be separated into different files to make the JS and CSS files useful to other HTML files especially the JS functions
 
-> Date Created: May 04, 2021
-> Purpose: Tutorial
+> Date Created: May 04, 2021 || Purpose: Tutorial
