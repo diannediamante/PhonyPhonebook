@@ -1,5 +1,5 @@
 ## My Little Phony
-	- Simple Phonebook Webpage where a user can add a new item    in the list of currently registered names in the phonebook
+	- Simple Phonebook Webpage where a user can add a new item in the list of currently registered names in the phonebook
 	- Combination of HTML, CSS, and Javascript
 
 ### Features:
