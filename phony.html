@@ -85,9 +85,9 @@
 		</style>
 	</head>
 
-<!------------------------------------------------------ START OF HTML BODY ------------------------------------------------------>
+<!------------------- START OF HTML BODY ------------------->
 	<body onload="displaylist()">
-		<h1 class="mainHeader">My Little Pony</h1>
+		<h1 class="mainHeader">My Little Phony</h1>
 		<div class="container">
 
 			<!-- Add info -->
@@ -161,7 +161,7 @@
 	</body>
 </html>
 
-<!--------------------------------------------------------- SCRIPT CODE --------------------------------------------------------->
+<!--------------------- SCRIPT CODE --------------------->
 <script>
 	//count number of elements in the unordered list
 	//use only one unordered list id since all lists have the same length
@@ -172,13 +172,13 @@
 	//delete button is clicked
 	function delbutton(){
 		//prompt
-		alert("You cannot delete friends because Friends is Magic!");
+		alert("You cannot delete friends because Friends are Magic!");
 		return false;
 	}
 
 	//display friends upon load/refresh
 	function displaylist(){
-		//clear field values upon refresh/ on load
+		//clear field values upon refresh/on load
 		document.getElementById('add_name').value = "";
 		document.getElementById('add_address').value = "";
 		document.getElementById('add_phone').value = "";
@@ -196,11 +196,9 @@
 		if (index + 1 > childcnt){						//the last item has been reached
 			alert("This is your Most Recent Friend!");	//prompt
 		}
-		else{			//continue navigating to the next item
-			index++;	//update index count
-			document.getElementById('f_name').innerHTML = document.querySelector('#friend-name li:nth-child('+index+')').innerText;
-			document.getElementById('f_address').innerHTML = document.querySelector('#friend-address li:nth-child('+index+')').innerText;
-			document.getElementById('f_phone').innerHTML = document.querySelector('#friend-phone li:nth-child('+index+')').innerText;
+		else{				//continue navigating to the next item
+			index++;		//update index count
+			displaylist();
 		}
 		return false;
 	}
@@ -211,11 +209,9 @@
 		if (index - 1 < 1){								//the first item has been reached
 			alert("This is your First Friend Added!");	//prompt
 		}
-		else{			//continue navigating to the previous item
-			index--;	//update index count
-			document.getElementById('f_name').innerHTML = document.querySelector('#friend-name li:nth-child('+index+')').innerText;
-			document.getElementById('f_address').innerHTML = document.querySelector('#friend-address li:nth-child('+index+')').innerText;
-			document.getElementById('f_phone').innerHTML = document.querySelector('#friend-phone li:nth-child('+index+')').innerText;
+		else{				//continue navigating to the previous item
+			index--;		//update index count
+			displaylist();
 		}
 		return false;
 	}
@@ -249,7 +245,7 @@
   			//add number
   			var newNum = document.getElementById("friend-phone");
   			var numItem = document.createElement("li");
-  			numItem.appendChild(document.createTextNode(name));
+  			numItem.appendChild(document.createTextNode(num));
   			newNum.appendChild(numItem);
 
   			//notification
